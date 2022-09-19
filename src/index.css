@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;  
+  background-color: red;
+  padding: 20px 40px;
+  height: 15vh;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;  
+}
+
+nav ul li{
+  list-style: none;
+  margin: 5px;
+}
+
+.container {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  
+}
+
+.pokemon {
+  border: 0.5px solid #ddd;
+  padding: 20px;
+  width: 33%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: rgb(233, 204, 125);   
+
+}
+
+.card_pokemon {
+  border: 1.5px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.buttonbar button {
+  background-color: crimson;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: 400;
+  padding: 0.7rem;  
+  transition: all 0.3s ease-in-out;
+  width: 120px;
+  margin: 5px;
+}
+
+button:hover{
+  background-color: salmon;
+  transform: scale(1.1);
+}
+
+.verTodos{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  color: rgb(95, 93, 93);
+  background-color: rgb(233, 204, 125); 
+}
+
+.containerPokemon{
+  display: grid;
+  column-gap: 2rem;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin: 1rem auto;
+  width: 80%;
+}
+
+.character{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  max-height: 500px;
+}
+.character :nth-child(1){
+    border-radius: 50%;
+    transition: all 0.5s ease-in;
+    width: 80%;
+}
+
+.character :nth-child(1):hover{
+  transform: rotate(1turn);
+}
+
+.character :nth-child(2){
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.linkDetail {
+  color: white;
+  background-color: crimson;
+  margin: 0.1rem auto;
+  padding: 5px;
+  width: 40px;
+  border-radius: 10%;
+}
+
+.buttonDetail {
+  color: white;
+  background-color: blue;
+  margin: 0.1rem auto;
+  padding: 2px;
+  width: 40px;
+  border-radius: 10%;
+}
+
+
+.card img.redimension{
+  max-width: 30%;
+  max-height: 30%;
+}
+
+div.pokemonDetail{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgb(233, 204, 125);  
+}
+
+div.bodyPokemonDetail{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(75, 114, 196);  
+}
