@@ -72,7 +72,9 @@ const Buscar = () => {
         </div>  
       </div>
       :     
-      <div></div>
+      <div className='container'>        
+        <h2>{search !== "" ? "Pokémon no Encontrado" : ""}</h2>
+      </div>
       }      
     </>    
    
